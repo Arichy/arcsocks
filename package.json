@@ -1,0 +1,19 @@
+{
+  "name": "arcsocks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.23"
+  },
+  "scripts": {
+    "test": "node src/index.js",
+    "local": "node src/local-server.js",
+    "remote": "node src/remote-server.js",
+    "demo": "node src/demo/index.js 3001"
+  },
+  "dependencies": {
+    "smart-buffer": "^4.2.0",
+    "socks": "^2.6.2"
+  }
+}
