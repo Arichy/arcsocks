@@ -17,6 +17,12 @@ const server = net.createServer(socket => {
       }
     })();
 
+    if (!ip || !port) {
+      console.log('Invalid request');
+      socket.end();
+      return;
+    }
+
     console.log(`Connection to ${ip}:${port}`);
 
     const remote = net.connect(port, ip);
